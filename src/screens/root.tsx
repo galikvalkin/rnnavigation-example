@@ -14,8 +14,10 @@ import {
 import useAuth from '../contexts/useAuth';
 import { ROUTE_NAMES } from '../navigation/constants';
 import { ROOT_SIGNIN } from '../navigation/signin';
-import usePush from '../navigation/usePush';
-import useSetRoot from '../navigation/useSetRoot';
+import {
+  usePush,
+  useSetRoot,
+} from '../navigation/util';
 
 const Root = (props: { componentId: string }) => {
   const push = usePush(props.componentId);

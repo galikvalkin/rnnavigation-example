@@ -5,7 +5,7 @@ import {
   Options,
 } from 'react-native-navigation';
 
-const usePush = (componentId: string) => {
+export const usePush = (componentId: string) => {
   const push = useCallback(
     ({
       name,
@@ -29,4 +29,13 @@ const usePush = (componentId: string) => {
   return push;
 };
 
-export default usePush;
+export const useSetRoot = () => {
+  const setRoot = useCallback((structure: any) => {
+    Navigation.setRoot({
+      root: structure,
+    });
+  }, []);
+  return setRoot;
+};
+
+export const showModal = (structure: any) => Navigation.showModal(structure);

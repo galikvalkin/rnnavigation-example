@@ -6,4 +6,5 @@ export enum ROUTE_NAMES {
   LIST = 'LIST',
   TAB_1 = 'TAB_1',
   TAB_2 = 'TAB_2',
+  MODAL = 'MODAL'
 }

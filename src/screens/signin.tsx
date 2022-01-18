@@ -14,7 +14,7 @@ import {
 import useAuth from '../contexts/useAuth';
 import { BOTTOM_TABS } from '../navigation/bottomTabs';
 import { SIDE_MENU } from '../navigation/sideMenu';
-import useSetRoot from '../navigation/useSetRoot';
+import { useSetRoot } from '../navigation/util';
 
 const Signin = (props: { componentId: string }) => {
   const setRoot = useSetRoot();

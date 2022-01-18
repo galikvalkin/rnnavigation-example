@@ -1,3 +1,4 @@
+import Modal from '../components/modal';
 import SideMenu from '../components/sideMenu';
 import Home from '../screens/home';
 import List from '../screens/list';
@@ -38,5 +39,9 @@ export const ROUTES = {
   [ROUTE_NAMES.TAB_2]: {
     name: ROUTE_NAMES.TAB_2,
     component: Tab2,
+  },
+  [ROUTE_NAMES.MODAL]: {
+    name: ROUTE_NAMES.MODAL,
+    component: Modal,
   },
 };

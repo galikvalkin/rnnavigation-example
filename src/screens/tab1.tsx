@@ -12,8 +12,12 @@ import {
 } from 'react-native';
 
 import useAuth from '../contexts/useAuth';
+import { MODAL } from '../navigation/modal';
 import { ROOT_SIGNIN } from '../navigation/signin';
-import useSetRoot from '../navigation/useSetRoot';
+import {
+  showModal,
+  useSetRoot,
+} from '../navigation/util';
 
 const Tab1 = (props: { componentId: string }) => {
   const setRoot = useSetRoot();
@@ -40,6 +44,12 @@ const Tab1 = (props: { componentId: string }) => {
             setRoot(ROOT_SIGNIN);
           }}
           title="Signout"
+        />
+        <Button
+          onPress={() => {
+            showModal(MODAL);
+          }}
+          title="Open modal"
         />
       </ScrollView>
     </SafeAreaView>

@@ -13,7 +13,7 @@ import {
 
 import useAuth from '../contexts/useAuth';
 import { ROOT_SIGNIN } from '../navigation/signin';
-import useSetRoot from '../navigation/useSetRoot';
+import { useSetRoot } from '../navigation/util';
 
 const Tab2 = (props: { componentId: string }) => {
   const setRoot = useSetRoot();
